@@ -1,0 +1,29 @@
+@use "variaveis";
+/* --- RESET --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+  }
+  
+  html,
+  body {
+    background-color: var(--bg);
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
+  body {
+    line-height: 1.6;
+    color: var(--text);
+    transition: background-color 0.5s cubic-bezier(0.2, 0.8, 0.2, 1),
+                color 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    width: 100%;
+  }

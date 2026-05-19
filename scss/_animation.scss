@@ -1,0 +1,26 @@
+/* --- ANIMAÇÕES --- */
+.reveal,
+.reveal-left,
+.reveal-right {
+  opacity: 0;
+  transition: opacity 1.8s cubic-bezier(0.08, 0.82, 0.17, 1),
+              transform 1.8s cubic-bezier(0.08, 0.82, 0.17, 1);
+  will-change: transform, opacity;
+
+  &.active {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.reveal {
+  transform: translateY(60px);
+}
+
+.reveal-left {
+  transform: translateX(-70px);
+}
+
+.reveal-right {
+  transform: translateX(70px);
+}
