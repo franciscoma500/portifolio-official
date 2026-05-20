@@ -163,8 +163,8 @@ const projectsData = [
     desc: "Website moderno para restaurante com menu digital, galeria de nosso espaço, secção de reservas pelo WhatsApp.",
     img: "img/sabor2.png",
     tags: ["HTML", "SCSS","Javascript","API"],
-    repoUrl: "#",
-    liveUrl: "#",
+    repoUrl: "sabor-e-arte-restaurante.netlify.app",
+    liveUrl: "https://github.com/franciscoma500/Projecto-web-restaurant.git",
   },
   {
     title: "Loja Virtual Responsiva",
