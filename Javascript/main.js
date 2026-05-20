@@ -155,8 +155,8 @@ const projectsData = [
     desc: "Website moderno e responsivo com sistema dark/light mode, animações suaves e design profissional.",
     img: "img/portifolioWhite.png",
     tags: ["HTML", "SCSS","Javascript"],
-    repoUrl: "#",
-    liveUrl: "#",
+    repoUrl: "https://github.com/franciscoma500/portifolio-official",
+    liveUrl: "https://franciscoma500.github.io/portifolio-official",
   },
   {
     title: "Website de Restaurante",
@@ -171,8 +171,8 @@ const projectsData = [
     desc: "⚠️ Projeto de e-commerce moderno em desenvolvimento.O estado do código e site está indisponível temporariamente",
     img: "img/Sneaker1.png",
     tags: ["Node.js", "React.js","Express.js"],
-    repoUrl: "https://github.com/franciscoma500/portifolio-official",
-    liveUrl: "https://franciscoma500.github.io/portifolio-official",
+    repoUrl: "#",
+    liveUrl: "#",
   },
 ];
 
