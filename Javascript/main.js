@@ -171,8 +171,8 @@ const projectsData = [
     desc: "⚠️ Projeto de e-commerce moderno em desenvolvimento.O estado do código e site está indisponível temporariamente",
     img: "img/Sneaker1.png",
     tags: ["Node.js", "React.js","Express.js"],
-    
-    
+    repoUrl: "",
+    liveUrl: "",
   },
 ];
 
