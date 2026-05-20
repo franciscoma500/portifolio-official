@@ -164,7 +164,7 @@ const projectsData = [
     img: "img/sabor2.png",
     tags: ["HTML", "SCSS","Javascript","API"],
     repoUrl: "https://github.com/franciscoma500/Projecto-web-restaurant" ,
-    liveUrl: "https://sabor-e-arte-restaurante.netlify.app",
+    liveUrl: "https://franciscoma500.github.io/Projecto-web-restaurant",
   },
   {
     title: "Loja Virtual Responsiva",
