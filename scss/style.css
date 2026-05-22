@@ -348,7 +348,7 @@ body {
   color: var(--primary);
   padding: 0.3rem 0.7rem;
   border-radius: 6px;
-  font-size: 1rem;
+  font-size: 0.75rem;
   font-weight: 700;
 }
 
@@ -368,7 +368,7 @@ body {
 .project-link {
   text-decoration: none;
   color: var(--text-muted);
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 600;
   display: flex;
   align-items: center;
