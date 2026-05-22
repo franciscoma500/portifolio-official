@@ -240,7 +240,7 @@ body {
   display: flex;
   gap: 1rem;
 }
-
+/* --- Sobre Mim --- */
 .about-content {
   max-width: 750px;
   margin: 0 auto;
