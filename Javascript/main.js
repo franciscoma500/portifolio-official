@@ -138,14 +138,14 @@ const skillsData = [
     desc: "Node.js, Express.js, APIs REST",
   },
   {
-    name: "DevOps & TOOLS",
+    name: "DevOps",
     icon: "fa-terminal",
-    desc: "Deploy Web, Versionamento, API Integration, VS Code, Git, GitHub",
+    desc: "Deploy Web, Versionamento, API Integration",
   },
   {
-    name: "Mobile",
-    icon: "fa-mobile-alt",
-    desc: "Em estudo",
+    name: "TOOLS",
+    icon: "fa-solid fa-code",
+    desc: "VS Code, Git, GitHub",
   },
 ];
 
