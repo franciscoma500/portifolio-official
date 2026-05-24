@@ -167,7 +167,7 @@ const projectsData = [
     liveUrl: "https://franciscoma500.github.io/Projecto-web-restaurant",
   },
   {
-    title: "Loja Virtual Responsiva",
+    title: "Em breve",
     desc: "⚠️ Projeto de e-commerce moderno em desenvolvimento.O estado do código e site está indisponível temporariamente",
     img: "img/Sneaker1.png",
     tags: ["Node.js", "React.js","Express.js"],
