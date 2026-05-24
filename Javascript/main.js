@@ -160,7 +160,7 @@ const projectsData = [
   },
   {
     title: "Website de Restaurante",
-    desc: "Website moderno para restaurante com menu digital, galeria de nosso espaço, secção de reservas pelo WhatsApp.",
+    desc: "Website moderno para restaurante eçojfcepwfkcwlhedlk dfgvbswçdbf svddslpfhvsçnhcom menu digital, galeria de nosso espaço, secção de reservas pelo WhatsApp.",
     img: "img/sabor2.png",
     tags: ["HTML", "SCSS","Javascript","API"],
     repoUrl: "https://github.com/franciscoma500/Projecto-web-restaurant" ,
@@ -192,42 +192,38 @@ document.getElementById("skills-container").innerHTML = skillsData
   )
   .join("");
 
-// Inserindo os Projetos no DOM
+// Inserir Projetos no DOM com blindagem de layout
 document.getElementById("projects-container").innerHTML = projectsData
   .map(
     (p, i) => `
-      <div class="project-card reveal" style="transition-delay: ${i * 0.2}s">
-          <div class="project-img"><img src="${
-            p.img
-          }" alt="Captura de tela do projeto ${p.title}"></div>
-          <div class="project-info">
-              <h3>${p.title}</h3>
-              <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem">${
-                p.desc
-              }</p>
-              <div class="project-tags">${p.tags
-                .map((t) => `<span class="tag">${t}</span>`)
-                .join("")}</div>
-              <hr class="project-divider" aria-hidden="true">
-              <div class="project-links">
-                  <a href="${
-                    p.repoUrl
-                  }" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Código fonte de ${
-      p.title
-    }">
+      <div class="project-card reveal" style="transition-delay: ${i * 0.35}s; display: flex; flex-direction: column; height: 100%;">
+          <div class="project-img" style="flex-shrink: 0;">
+              <img src="${p.img}" alt="Captura de ecrã do projeto ${p.title}" style="width: 100%; height: 220px; object-fit: cover;">
+          </div>
+          <div class="project-info" style="padding: 1.8rem; display: flex; flex-direction: column; flex-grow: 1;">
+              <h3 style="margin-bottom: 0.5rem;">${p.title}</h3>
+              
+              <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0 0 auto 0; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; min-height: 4.3rem; line-height: 1.55;">
+                  ${p.desc}
+              </p>
+              
+              <div class="project-tags" style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1.5rem; margin-bottom: 1rem;">
+                  ${p.tags.map((t) => `<span class="tag">${t}</span>`).join("")}
+              </div>
+              
+              <hr class="project-divider" aria-hidden="true" style="border: 0; height: 1px; background: var(--border); margin: 0 0 1rem 0; width: 100%;">
+              
+              <div class="project-links" style="display: flex; justify-content: space-between; align-items: center; width: 100%; margin-top: auto;">
+                  <a href="${p.repoUrl}" target="_blank" rel="noopener noreferrer" class="project-link" style="display: flex; align-items: center; gap: 0.5rem;">
                       <i class="fab fa-github" aria-hidden="true"></i> código
                   </a>
-                  <a href="${
-                    p.liveUrl
-                  }" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Demonstração de ${
-      p.title
-    }">
+                  <a href="${p.liveUrl}" target="_blank" rel="noopener noreferrer" class="project-link" style="display: flex; align-items: center; gap: 0.5rem;">
                       <i class="fas fa-external-link-alt" aria-hidden="true"></i> Abrir site
                   </a>
               </div>
           </div>
       </div>
-    `
+  `
   )
   .join("");
 

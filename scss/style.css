@@ -304,6 +304,7 @@ body {
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-auto-rows: 1fr; /* 💡 ISSO OBRIGA TODOS OS CARTÕES DA LINHA A TEREM A MESMA ALTURA */
   gap: 2.5rem;
 }
 
