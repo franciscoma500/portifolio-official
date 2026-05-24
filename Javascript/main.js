@@ -160,7 +160,7 @@ const projectsData = [
   },
   {
     title: "Website de Restaurante",
-    desc: "Website moderno para restaurante eçojfcepwfkcwlhedlk dfgvbswçdbf svdsdohshdoddslpfhvsçnhcom menu digital, galeria de nosso espaço, secção de reservas pelo WhatsApp.",
+    desc: "Website moderno para restaurante com menu digital, galeria de nosso espaço, secção de reservas pelo WhatsApp.",
     img: "img/sabor2.png",
     tags: ["HTML", "SCSS","Javascript","API"],
     repoUrl: "https://github.com/franciscoma500/Projecto-web-restaurant" ,
