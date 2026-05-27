@@ -462,6 +462,9 @@ footer .social-links a:hover {
     flex-direction: column-reverse;
     text-align: center;
   }
+  .hero .container .description {
+    max-width: 930px;
+  }
   .hero-btns {
     justify-content: center;
   }

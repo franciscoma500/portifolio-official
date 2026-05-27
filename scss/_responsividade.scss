@@ -5,6 +5,10 @@
       .container {
         flex-direction: column-reverse;
         text-align: center;
+        
+        .description{
+        max-width: 930px;  
+        }
       }
     }
   
