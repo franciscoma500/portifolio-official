@@ -135,7 +135,7 @@ const skillsData = [
   {
     name: "Backend",
     icon: "fa-database",
-    desc: "Node.js, Express.js, APIs REST",
+    desc: "Node.js, Express.js, APIs REST, MySQL",
   },
   {
     name: "DevOps",
