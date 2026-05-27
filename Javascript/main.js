@@ -130,7 +130,7 @@ const skillsData = [
   {
     name: "Frontend",
     icon: "fa-laptop-code",
-    desc: "HTML ,CSS3 ,SCSS/Sass, JavaScript",
+    desc: "HTML ,CSS3 ,SCSS/Sass, JavaScript, React.js",
   },
   {
     name: "Backend",
