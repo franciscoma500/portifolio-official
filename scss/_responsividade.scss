@@ -63,3 +63,11 @@
       gap: 1rem;
     }
   }
+  @media (max-width: 427px) {
+    
+      .hero-btns{
+          flex-direction: column;
+      }
+
+    }
+  

@@ -160,15 +160,15 @@ const projectsData = [
   },
   {
     title: "Website de Restaurante",
-    desc: "Website moderno para restaurante com menu digital, galeria de nosso espaço, secção de reservas pelo WhatsApp.",
+    desc: "Sistema de Restaurante com reservas online e integração com o WhatsApp para atendimento ao cliente.",
     img: "img/sabor2.png",
     tags: ["HTML", "SCSS","Javascript","API"],
     repoUrl: "https://github.com/franciscoma500/restaurante" ,
     liveUrl: "https://franciscoma500.github.io/restaurante",
   },
   {
-    title: "Em breve",
-    desc: "⚠️ Projeto de e-commerce moderno em desenvolvimento.O estado do código e site está indisponível temporariamente",
+    title: "Projeto em desenvolvimento.",
+    desc: "⚠️ Projeto de e-commerce moderno em desenvolvimento.O estado do código e site está indisponível temporariamente.",
     img: "img/Sneaker1.png",
     tags: ["Node.js", "React.js","Express.js"],
     repoUrl: "",

@@ -508,4 +508,9 @@ footer .social-links a:hover {
   .nav-right {
     gap: 1rem;
   }
+}
+@media (max-width: 427px) {
+  .hero-btns {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */
