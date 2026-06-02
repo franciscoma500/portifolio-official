@@ -467,6 +467,7 @@ footer .social-links a:hover {
   }
   .hero-btns {
     justify-content: center;
+    flex-direction: column;
   }
   .hero-image img {
     max-width: 280px;
