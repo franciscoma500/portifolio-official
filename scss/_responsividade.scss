@@ -14,7 +14,7 @@
   
     .hero-btns {
       justify-content: center;
-          flex-direction: column;
+          flex-direction: row;
 
     }
   
@@ -65,7 +65,7 @@
       gap: 1rem;
     }
   }
-  @media (max-width: 427px) {
+  @media (max-width: 456px) {
     
       .hero-btns{
           flex-direction: column;

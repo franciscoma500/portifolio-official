@@ -353,6 +353,36 @@ body {
   font-weight: 700;
 }
 
+/* Badge de desenvolvimento interna na imagem */
+.badge-developing {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #eab308;
+  color: #0f172a;
+  padding: 0.4rem 0.8rem;
+  border-radius: 30px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.tag {
+  background: rgba(37, 99, 235, 0.1);
+  color: var(--primary);
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.tag.tag-warn {
+  background: rgba(234, 179, 8, 0.1);
+  color: #d97706;
+}
+
 .project-divider {
   border: 0;
   height: 1px;
@@ -417,9 +447,12 @@ footer {
   text-align: center;
   transition: background-color 0.5s, border-color 0.5s;
 }
-footer h3 {
+footer h2 {
   margin-bottom: 1rem;
   font-size: 2rem;
+}
+footer h2 span {
+  color: var(--primary);
 }
 footer .footer-desc,
 footer .footer-copy {
@@ -467,7 +500,7 @@ footer .social-links a:hover {
   }
   .hero-btns {
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
   }
   .hero-image img {
     max-width: 280px;
@@ -510,7 +543,7 @@ footer .social-links a:hover {
     gap: 1rem;
   }
 }
-@media (max-width: 427px) {
+@media (max-width: 456px) {
   .hero-btns {
     flex-direction: column;
   }

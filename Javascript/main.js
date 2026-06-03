@@ -135,7 +135,7 @@ const skillsData = [
   {
     name: "Backend",
     icon: "fa-database",
-    desc: "Node.js, Express.js, APIs REST, MySQL",
+    desc: "Node.js, Express.js, APIs REST",
   },
   {
     name: "DevOps",
@@ -144,8 +144,13 @@ const skillsData = [
   },
   {
     name: "TOOLS",
-    icon: "fa-solid fa-code",
+    icon: "fas fa-tools",
     desc: "VS Code, Git, GitHub",
+  },
+  {
+    name: "Database",
+    icon: "fas fa-tools",
+    desc: " MySQL, MongoDB",
   },
 ];
 
@@ -157,6 +162,7 @@ const projectsData = [
     tags: ["HTML", "SCSS","Javascript"],
     repoUrl: "https://github.com/franciscoma500/portifolio-official",
     liveUrl: "https://franciscoma500.github.io/portifolio-official",
+    isDeveloping: false
   },
   {
     title: "Website de Restaurante",
@@ -165,6 +171,7 @@ const projectsData = [
     tags: ["HTML", "SCSS","Javascript","API"],
     repoUrl: "https://github.com/franciscoma500/restaurante" ,
     liveUrl: "https://franciscoma500.github.io/restaurante",
+    isDeveloping: false
   },
   {
     title: "Projeto em desenvolvimento.",
@@ -173,6 +180,7 @@ const projectsData = [
     tags: ["Node.js", "React.js","Express.js"],
     repoUrl: "",
     liveUrl: "",
+    isDeveloping: true // Ativa a badge e o ícone de aviso
   },
 ];
 
@@ -192,13 +200,26 @@ document.getElementById("skills-container").innerHTML = skillsData
   )
   .join("");
 
-// Inserir Projetos no DOM com blindagem de layout
+// Inserir Projetos no DOM com blindagem de layout e badge de desenvolvimento
 document.getElementById("projects-container").innerHTML = projectsData
-  .map(
-    (p, i) => `
-      <div class="project-card reveal" style="transition-delay: ${i * 0.35}s; display: flex; flex-direction: column; height: 100%;">
-          <div class="project-img" style="flex-shrink: 0;">
+  .map((p, i) => {
+    // Renderiza links ou botão desativado caso esteja em desenvolvimento
+    const linksHtml = p.isDeveloping 
+      ? `<span class="tag tag-warn"><i class="fas fa-exclamation-triangle"></i> Em Desenvolvimento</span>`
+      : `
+        <a href="${p.repoUrl}" target="_blank" rel="noopener noreferrer" class="project-link">
+            <i class="fab fa-github" aria-hidden="true"></i> código
+        </a>
+        <a href="${p.liveUrl}" target="_blank" rel="noopener noreferrer" class="project-link">
+            <i class="fas fa-external-link-alt" aria-hidden="true"></i> Abrir site
+        </a>
+      `;
+
+    return `
+      <div class="project-card reveal" style="transition-delay: ${i * 0.2}s; display: flex; flex-direction: column; height: 100%;">
+          <div class="project-img" style="position: relative; flex-shrink: 0;">
               <img src="${p.img}" alt="Captura de ecrã do projeto ${p.title}" style="width: 100%; height: 220px; object-fit: cover;">
+              ${p.isDeveloping ? `<span class="badge-developing"><i class="fas fa-tools"></i> Em Desenvolvimento</span>` : ''}
           </div>
           <div class="project-info" style="padding: 1.8rem; display: flex; flex-direction: column; flex-grow: 1;">
               <h3 style="margin-bottom: 0.5rem;">${p.title}</h3>
@@ -213,19 +234,13 @@ document.getElementById("projects-container").innerHTML = projectsData
               
               <hr class="project-divider" aria-hidden="true" style="border: 0; height: 1px; background: var(--border); margin: 0 0 1rem 0; width: 100%;">
               
-              <div class="project-links" style="display: flex; justify-content: space-between; align-items: center; width: 100%; margin-top: auto;">
-                  <a href="${p.repoUrl}" target="_blank" rel="noopener noreferrer" class="project-link" style="display: flex; align-items: center; gap: 0.5rem;">
-                      <i class="fab fa-github" aria-hidden="true"></i> código
-                  </a>
-                  <a href="${p.liveUrl}" target="_blank" rel="noopener noreferrer" class="project-link" style="display: flex; align-items: center; gap: 0.5rem;">
-                      <i class="fas fa-external-link-alt" aria-hidden="true"></i> Abrir site
-                  </a>
+              <div class="project-links" style="display: flex; justify-content: ${p.isDeveloping ? 'center' : 'space-between'}; align-items: center; width: 100%; margin-top: auto;">
+                  ${linksHtml}
               </div>
           </div>
       </div>
-  `
-  )
-  .join("");
+    `;
+  }).join("");
 
 // --- INTERSECTION OBSERVER (Gatilho de animação Scroll-Reveal) ---
 const observerOptions = { threshold: 0.15 };

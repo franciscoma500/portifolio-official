@@ -105,6 +105,35 @@
     font-weight: 700;
         
   }
+   /* Badge de desenvolvimento interna na imagem */
+  .badge-developing {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #eab308; // Amarelo de atenção
+    color: #0f172a;
+    padding: 0.4rem 0.8rem;
+    border-radius: 30px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+.tag {
+  background: rgba(37, 99, 235, 0.1);
+  color: var(--primary);
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  font-size: 0.75rem; 
+  font-weight: 700;
+
+  &.tag-warn {
+    background: rgba(234, 179, 8, 0.1);
+    color: #d97706;
+  }
+}
   
   .project-divider {
     border: 0;

@@ -7,9 +7,12 @@ footer {
     text-align: center;
     transition: background-color 0.5s, border-color 0.5s;
   
-    h3 {
+    h2 {
       margin-bottom: 1rem;
       font-size: 2rem;
+      span {
+        color: var(--primary);
+      }
     }
   
     .footer-desc,
