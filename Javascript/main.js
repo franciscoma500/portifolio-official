@@ -134,7 +134,7 @@ const skillsData = [
   },
   {
     name: "Backend",
-    icon: "fa-database",
+    icon: "fa-solid fa-server",
     desc: "Node.js, Express.js, APIs REST",
   },
   {
@@ -148,8 +148,8 @@ const skillsData = [
     desc: "VS Code, Git, GitHub",
   },
   {
-    name: "Database",
-    icon: "fas fa-tools",
+    name: "DataBase",
+    icon: "fa-database",
     desc: " MySQL, MongoDB",
   },
 ];
