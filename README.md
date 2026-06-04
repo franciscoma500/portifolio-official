@@ -29,7 +29,7 @@ O website apresenta uma interface moderna, navegação intuitiva e uma experiên
 * SCSS
 * JavaScript
 
-### Ferramentas
+### Ferramentas 
 
 * Git
 * GitHub
